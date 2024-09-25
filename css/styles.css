@@ -56,7 +56,7 @@ body {
     padding-right: 72px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header__content {
     padding-left: 20px;
     padding-right: 20px;
