@@ -100,12 +100,17 @@ body {
       position: absolute;
 
       @media (max-width: 1366px) {
-        width: 450px;
+        width: 480px;
+        height: auto;
+      }
+
+      @media (max-width: 1024px) {
+        width: 400px;
         height: auto;
       }
 
       @media (max-width: 768px) {
-        width: 350px;
+        width: 300px;
         height: auto;
       }
     }
@@ -132,6 +137,11 @@ body {
           font-weight: 700;
           color: $text-color;
           line-height: 106px;
+
+          @media (max-width: 1366px) {
+            font-size: 80px;
+            line-height: 90px;
+          }
 
           @media (max-width: 768px) {
             font-size: 40px;
@@ -173,7 +183,8 @@ body {
         }
 
         @media (max-width: 1366px) {
-          margin-top: 110px;
+          margin-top: 150px;
+          width: 600px;
         }
 
         @media (max-width: 768px) {
@@ -202,7 +213,7 @@ body {
     }
 
     @media (max-width: 1024px) {
-      height: 800px;
+      height: 750px;
     }
   }
 }
