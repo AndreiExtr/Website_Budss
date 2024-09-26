@@ -219,22 +219,9 @@ body {
   bottom: 0;
   position: absolute;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1280px) {
   .main .about .about-img {
-    width: 480px;
-    height: auto;
-  }
-}
-@media (max-width: 1024px) {
-  .main .about .about-img {
-    width: 400px;
-    height: auto;
-  }
-}
-@media (max-width: 768px) {
-  .main .about .about-img {
-    width: 300px;
-    height: auto;
+    display: none;
   }
 }
 .main .about__content {
@@ -314,6 +301,20 @@ body {
   max-width: 100%; /* чтобы изображение не выходило за пределы блока */
   height: auto; /* сохраняем пропорции */
 }
+@media (max-width: 1280px) {
+  .main .about__content .info .grid-container {
+    width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  .main .about__content .info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 45px;
+  }
+}
 @media (max-width: 1366px) {
   .main .about__content {
     display: flex;
@@ -328,6 +329,11 @@ body {
   .main .about__content {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media (max-width: 1366px) {
+  .main .about {
+    margin-top: 60px;
   }
 }
 @media (max-width: 1024px) {
