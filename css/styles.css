@@ -367,8 +367,176 @@ body {
     margin-top: 60px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .main .about {
+    height: auto;
+  }
+}
+.main .work {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 100px;
+  overflow: hidden;
+}
+.main .work .mockup-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.main .work__content {
+  max-width: 1260px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.main .work__content .texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Центрирование по горизонтали */
+  width: 100%;
+  gap: 50px;
+  position: relative;
+}
+.main .work__content .texts__container-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100vw;
+  position: relative;
+  left: -10vw; /* Перемещение за пределы браузера */
+  animation: move-left-right 40s linear infinite;
+}
+.main .work__content .texts__container-1 .text-item-1,
+.main .work__content .texts__container-1 .text-item-2 {
+  font-size: 128px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.main .work__content .texts__container-1 .text-item-1 {
+  color: #2FDBBC;
+}
+.main .work__content .texts__container-1 .text-item-2 {
+  color: #181818;
+  text-shadow: -1px -1px 0 #444444, 1px -1px 0 #444444, -1px 1px 0 #444444, 1px 1px 0 #444444; /* Контур */
+  background-color: transparent; /* Без фона */
+}
+@keyframes move-left-right {
+  0% {
+    transform: translateX(-70%); /* Начальная позиция (слева) */
+  }
+  50% {
+    transform: translateX(50%); /* Конечная позиция (справа) */
+  }
+  100% {
+    transform: translateX(-70%); /* Возвращение в начальную позицию (слева) */
+  }
+}
+.main .work__content .texts__container-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100vw;
+  position: relative;
+  animation: move-left-right 30s linear infinite;
+}
+.main .work__content .texts__container-2 .text-item-2,
+.main .work__content .texts__container-2 .text-item-3,
+.main .work__content .texts__container-2 .text-item-4 {
+  font-size: 128px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.main .work__content .texts__container-2 .text-item-2 {
+  color: #181818;
+  text-shadow: -1px -1px 0 #444444, 1px -1px 0 #444444, -1px 1px 0 #444444, 1px 1px 0 #444444; /* Контур */
+  background-color: transparent; /* Без фона */
+}
+.main .work__content .texts__container-2 .text-item-3 {
+  color: #954CED;
+}
+.main .work__content .texts__container-2 .text-item-4 {
+  color: #181818;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff; /* Контур */
+  background-color: transparent; /* Без фона */
+}
+@keyframes move-left-right {
+  0% {
+    transform: translateX(-50%); /* Начальная позиция (слева) */
+  }
+  50% {
+    transform: translateX(50%); /* Конечная позиция (справа) */
+  }
+  100% {
+    transform: translateX(-50%); /* Возвращение в начальную позицию (слева) */
+  }
+}
+.main .work__content .texts__container-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100vw;
+  position: relative;
+  right: 6vw; /* Перемещение за пределы браузера */
+  animation: move-left-right 40s linear infinite;
+}
+.main .work__content .texts__container-3 .text-item-5,
+.main .work__content .texts__container-3 .text-item-2 {
+  font-size: 128px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.main .work__content .texts__container-3 .text-item-2 {
+  color: #181818;
+  text-shadow: -1px -1px 0 #444444, 1px -1px 0 #444444, -1px 1px 0 #444444, 1px 1px 0 #444444; /* Контур */
+  background-color: transparent; /* Без фона */
+}
+.main .work__content .texts__container-3 .text-item-5 {
+  color: #FFAA4C;
+}
+@keyframes move-left-right {
+  0% {
+    transform: translateX(-50%); /* Начальная позиция (слева) */
+  }
+  50% {
+    transform: translateX(50%); /* Конечная позиция (справа) */
+  }
+  100% {
+    transform: translateX(-50%); /* Возвращение в начальную позицию (слева) */
+  }
+}
+@media (max-width: 1366px) {
+  .main .work__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 72px;
+    padding-right: 72px;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 1024px) {
+  .main .work__content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1366px) {
+  .main .work {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 1024px) {
+  .main .work {
     height: 750px;
   }
 }/*# sourceMappingURL=styles.css.map */
