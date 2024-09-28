@@ -394,6 +394,11 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1;
+
+      @media (max-width: 768px) {
+        width: 228px;
+        height: auto;
+      }
     }
   
 
@@ -412,7 +417,7 @@ body {
         justify-content: center;
         align-items: center; /* Центрирование по горизонтали */
         width: 100%;
-        gap: 50px;
+        gap: 60px;
         position: relative;
 
         &__container-1{
@@ -422,13 +427,17 @@ body {
           width: 100vw;
           position: relative;
           left: -10vw; /* Перемещение за пределы браузера */
-          animation: move-left-right 40s linear infinite;
+          animation: move-left-right 50s linear infinite;
 
           .text-item-1,
           .text-item-2{
             font-size: 128px;
             font-weight: 700;
             white-space: nowrap;
+
+            @media (max-width: 768px) {
+              font-size: 48px;
+            }
           }
 
           .text-item-1{
@@ -464,7 +473,7 @@ body {
           gap: 16px;
           width: 100vw;
           position: relative;
-          animation: move-left-right 30s linear infinite;
+          animation: move-left-right 120s linear infinite;
 
           .text-item-2,
           .text-item-3,
@@ -472,6 +481,10 @@ body {
             font-size: 128px;
             font-weight: 700;
             white-space: nowrap;
+
+            @media (max-width: 768px) {
+              font-size: 48px;
+            }
           }
 
           .text-item-2 {
@@ -517,14 +530,18 @@ body {
           gap: 16px;
           width: 100vw;
           position: relative;
-          right: 6vw; /* Перемещение за пределы браузера */
-          animation: move-left-right 40s linear infinite;
+          right: 20vw; /* Перемещение за пределы браузера */
+          animation: move-left-right 50s linear infinite;
 
           .text-item-5,
           .text-item-2{
             font-size: 128px;
             font-weight: 700;
             white-space: nowrap;
+
+            @media (max-width: 768px) {
+              font-size: 48px;
+            }
           }
 
           .text-item-2 {
@@ -553,6 +570,10 @@ body {
             }
           }
         }
+
+        @media (max-width: 768px) {
+          gap: 90px;
+        }
       }
 
       @media (max-width: 1366px) {
@@ -568,6 +589,10 @@ body {
         padding-left: 20px;
         padding-right: 20px;
       }
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
     }
 
     @media (max-width: 1366px) {
@@ -576,6 +601,10 @@ body {
 
     @media (max-width: 1024px) {
       height: 750px;
+    }
+
+    @media (max-width: 768px) {
+      height: 540px;
     }
   }
 }
