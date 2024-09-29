@@ -670,8 +670,9 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
+  gap: 70px;
 }
 .main .why__content .title {
   display: flex;
@@ -714,6 +715,50 @@ body {
   background-color: #954CED;
   z-index: -1;
   transform: rotate(358deg);
+}
+.main .why__content .grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Первая колонка 200px, вторая занимает оставшуюся часть */
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+.main .why__content .grid-container .grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: left;
+  border-radius: 30px;
+  height: 362px;
+}
+.main .why__content .grid-container .grid-item h2 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 600;
+  color: #181818;
+}
+.main .why__content .grid-container .grid-item p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #181818;
+}
+.main .why__content .grid-container .grid-item:nth-child(1) {
+  grid-column: 1/span 3;
+  grid-row: 1;
+}
+.main .why__content .grid-container .grid-item:nth-child(2) {
+  grid-column: 4/span 2;
+  grid-row: 1;
+}
+.main .why__content .grid-container .grid-item:nth-child(3) {
+  grid-column: 1/span 2;
+  grid-row: 2;
+}
+.main .why__content .grid-container .grid-item:nth-child(4) {
+  grid-column: 3/span 3;
+  grid-row: 2;
 }
 @media (max-width: 1366px) {
   .main .why__content {
