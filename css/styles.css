@@ -681,6 +681,11 @@ body {
   width: 664px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .main .why__content .title {
+    width: 350px;
+  }
+}
 .main .why__content .title h1 {
   font-size: 96px;
   font-weight: 700;
@@ -705,6 +710,11 @@ body {
   color: #ffffff;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .main .why__content .title p {
+    font-size: 24px;
+  }
+}
 .main .why__content .title .circle {
   position: absolute;
   right: 147px;
@@ -716,13 +726,27 @@ body {
   z-index: -1;
   transform: rotate(358deg);
 }
+@media (max-width: 768px) {
+  .main .why__content .title .circle {
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    width: 248px;
+    height: 29px;
+  }
+}
 .main .why__content .grid-container {
   display: grid;
-  grid-template-columns: repeat(10, 1fr); /* Первая колонка 200px, вторая занимает оставшуюся часть */
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: auto auto;
   gap: 20px;
-  padding: 20px;
   width: 100%;
+}
+@media (max-width: 1200px) {
+  .main .why__content .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .main .why__content .grid-container .grid-item {
   background-color: #f0f0f0;
@@ -733,12 +757,23 @@ body {
   height: 362px;
   overflow: hidden;
 }
+@media (max-width: 1366px) {
+  .main .why__content .grid-container .grid-item {
+    height: 336px;
+  }
+}
 .main .why__content .grid-container .grid-item h2 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 600;
   line-height: 54px;
   color: #181818;
+}
+@media (max-width: 1366px) {
+  .main .why__content .grid-container .grid-item h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 .main .why__content .grid-container .grid-item p {
   margin: 0;
@@ -809,7 +844,7 @@ body {
   .main .why__content {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     padding-left: 72px;
     padding-right: 72px;
     justify-content: space-evenly;
@@ -817,10 +852,9 @@ body {
 }
 @media (max-width: 1024px) {
   .main .why__content {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
   }
 }

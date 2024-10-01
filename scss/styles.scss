@@ -708,6 +708,10 @@ body {
         width: 664px;
         position: relative;
 
+        @media (max-width: 768px) {
+          width: 350px;
+        }
+
         h1{
           font-size: 96px;
           font-weight: 700;
@@ -730,6 +734,10 @@ body {
           font-weight: 600;
           color: $text-color;
           text-align: center;
+
+          @media (max-width: 768px) {
+            font-size: 24px;
+          }
         }
 
         .circle{
@@ -742,16 +750,28 @@ body {
           background-color: $accent-color;
           z-index: -1;
           transform: rotate(358deg);
+
+            @media (max-width: 768px) {
+              position: absolute;
+              right: 0px;
+              bottom: -1px;
+              width: 248px;
+              height: 29px;
+            }
         }
       }
 
       .grid-container {
         display: grid;
-        grid-template-columns: repeat(10, 1fr);/* Первая колонка 200px, вторая занимает оставшуюся часть */
+        grid-template-columns: repeat(10, 1fr);
         grid-template-rows: auto auto;
         gap: 20px;
-        padding: 20px;
         width: 100%;
+
+        @media (max-width: 1200px) {
+          display: flex;
+          flex-direction: column;
+        }
 
         .grid-item {
           background-color: #f0f0f0;
@@ -762,12 +782,21 @@ body {
           height: 362px;
           overflow: hidden;
 
+          @media (max-width: 1366px) {
+            height: 336px;
+          }
+
           h2 {
             margin: 0 0 10px 0;
             font-size: 48px;
             font-weight: 600;
             line-height: 54px;
             color: $main-background-color;
+
+            @media (max-width: 1366px) {
+              font-size: 36px;
+              line-height: 42px;
+            }
           }
         
           p {
@@ -854,17 +883,16 @@ body {
       @media (max-width: 1366px) {
         display: flex;
         align-items: center;
-        flex-direction: row;
+        flex-direction: column;
         padding-left: 72px;
         padding-right: 72px;
         justify-content: space-evenly;
       }
 
       @media (max-width: 1024px) {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 20px;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
       }
     }
