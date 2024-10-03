@@ -947,8 +947,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 100px;
   justify-content: space-evenly;
-  gap: 70px;
 }
 @media (max-width: 1366px) {
   .main .contacts__content {
@@ -996,6 +996,48 @@ body {
 }
 .main .contacts__content .block .btn:hover {
   background-color: #181818;
+}
+.main .contacts__content .social {
+  height: 272px;
+  width: 100%;
+  position: relative;
+}
+.main .contacts__content .social .title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 822px;
+}
+.main .contacts__content .social .title h1 {
+  font-size: 96px;
+  line-height: 100px;
+  font-weight: 700;
+  color: #181818;
+}
+.main .contacts__content .social .title p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #181818;
+}
+.main .contacts__content .social .Facebook-img {
+  position: absolute;
+  right: 320px;
+  top: 30px;
+}
+.main .contacts__content .social .Instagram-img {
+  position: absolute;
+  right: 110px;
+  top: 30px;
+}
+.main .contacts__content .social .Twitter-img {
+  position: absolute;
+  right: 210px;
+  top: 140px;
+}
+.main .contacts__content .social .TikTok-img {
+  position: absolute;
+  right: 0px;
+  top: 140px;
 }
 @media (max-width: 1366px) {
   .main .contacts {

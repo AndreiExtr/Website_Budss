@@ -975,8 +975,8 @@ body {
       display: flex;
       align-items: center;
       flex-direction: column;
+      gap: 100px;
       justify-content:  space-evenly;
-      gap: 70px;
 
       @media (max-width: 1366px) {
         display: flex;
@@ -1024,6 +1024,56 @@ body {
           &:hover{
             background-color: $main-background-color;
           }
+        }
+      }
+
+      .social{
+        height: 272px;
+        width: 100%;
+        position: relative;
+
+        .title{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          width: 822px;
+
+          h1{
+            font-size: 96px;
+            line-height: 100px;
+            font-weight: 700;
+            color: $main-background-color;
+          }
+
+          p{
+            font-size: 20px;
+            font-weight: 400;
+            color: $main-background-color;
+          }
+        }
+
+        .Facebook-img{
+          position: absolute;
+          right: 320px;
+          top: 30px;
+        }
+
+        .Instagram-img{
+          position: absolute;
+          right: 110px;
+          top: 30px;
+        }
+
+        .Twitter-img{
+          position: absolute;
+          right: 210px;
+          top: 140px;
+        }
+
+        .TikTok-img{
+          position: absolute;
+          right: 0px;
+          top: 140px;
         }
       }
     }
