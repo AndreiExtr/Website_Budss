@@ -1076,6 +1076,42 @@ body {
           top: 140px;
         }
       }
+
+      .logos{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo1,
+        .logo2,
+        .logo3,
+        .logo4,
+        .logo5{
+          max-height: 100%;
+          height: auto;
+          width: auto;
+        }
+
+        .logo3{
+          max-height: 100%;
+          height: 48px;
+          width: 182px;
+        }
+
+        .logo4{
+          height: 40px;
+          width: 277px;
+        }
+
+        .logo5{
+          height: 46px;
+          width: 184px;
+        }
+
+      }
     }
 
     @media (max-width: 1366px) {
