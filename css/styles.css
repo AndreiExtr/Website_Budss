@@ -1151,6 +1151,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1024px) {
+  .footer {
+    height: auto;
+  }
+}
 .footer__content {
   max-width: 1260px;
   width: 100%;
@@ -1166,10 +1171,39 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+.footer__content .logo-btn .logo__img {
+  width: 157px;
+}
+@media (max-width: 1024px) {
+  .footer__content .logo-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px;
+  }
+  .footer__content .logo-btn .appstore__img,
+  .footer__content .logo-btn .googleplay__img {
+    width: 194px;
+  }
+}
 .footer__content .logo-btn .apps {
   display: flex;
   flex-direction: row;
   gap: 40px;
+}
+@media (max-width: 1024px) {
+  .footer__content .logo-btn .apps {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .footer__content .logo-btn .apps {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 .footer__content .logo-btn .apps .btn {
   width: auto;
@@ -1182,6 +1216,11 @@ body {
   border-radius: 16px;
   border: 2px solid transparent;
   box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .footer__content .logo-btn .apps .btn {
+    width: 184px;
+  }
 }
 .footer__content .logo-btn .apps .btn:hover {
   border: 2px solid #954CED;
@@ -1204,6 +1243,11 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .footer__content .copyright .links {
+    display: none;
+  }
 }
 .footer__content .copyright .links__item {
   color: #B9B9B9;
