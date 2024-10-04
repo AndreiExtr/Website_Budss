@@ -72,9 +72,6 @@ body {
   }
 }
 
-.main {
-  height: 100vh;
-}
 .main .hero {
   height: 700px;
   width: 100%;
@@ -1144,4 +1141,95 @@ body {
 .main .contacts__content .logos .logo5 {
   height: 46px;
   width: 184px;
+}
+
+.footer {
+  height: 190px;
+  width: 100%;
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__content {
+  max-width: 1260px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.footer__content .logo-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer__content .logo-btn .apps {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.footer__content .logo-btn .apps .btn {
+  width: auto;
+  height: 60px;
+  padding: 16px 30px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #954CED;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+.footer__content .logo-btn .apps .btn:hover {
+  border: 2px solid #954CED;
+  background-color: #181818;
+}
+.footer__content hr {
+  width: 100%;
+  border: 1px solid #444444;
+}
+.footer__content .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #B9B9B9;
+  font-size: 14px;
+  font-weight: 200;
+  width: 100%;
+}
+.footer__content .copyright .links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.footer__content .copyright .links__item {
+  color: #B9B9B9;
+  font-size: 14px;
+  font-weight: 200;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer__content .copyright .links__item:hover {
+  color: #954CED;
+}
+@media (max-width: 1366px) {
+  .footer__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 72px;
+    padding-right: 72px;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 1024px) {
+  .footer__content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=styles.css.map */
