@@ -565,9 +565,9 @@ body {
     justify-content: center;
   }
 }
-@media (max-width: 1366px) {
+@media (max-width: 1280px) {
   .main .work {
-    margin-top: 60px;
+    margin-top: 0;
   }
 }
 @media (max-width: 1024px) {
@@ -926,11 +926,6 @@ body {
     flex-direction: column;
   }
 }
-@media (max-width: 1366px) {
-  .main .why {
-    margin-top: 60px;
-  }
-}
 .main .contacts {
   height: auto;
   width: 100%;
@@ -998,9 +993,11 @@ body {
   background-color: #181818;
 }
 .main .contacts__content .social {
-  height: 272px;
+  height: auto;
   width: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .main .contacts__content .social .title {
   display: flex;
@@ -1019,33 +1016,39 @@ body {
   font-weight: 400;
   color: #181818;
 }
-.main .contacts__content .social .Facebook-img {
+.main .contacts__content .social .socials-icons {
+  width: 410px;
+  position: relative;
+}
+.main .contacts__content .social .socials-icons .Facebook-img {
   position: absolute;
   right: 320px;
   top: 30px;
 }
-.main .contacts__content .social .Instagram-img {
+.main .contacts__content .social .socials-icons .Instagram-img {
   position: absolute;
   right: 110px;
   top: 30px;
 }
-.main .contacts__content .social .Twitter-img {
+.main .contacts__content .social .socials-icons .Twitter-img {
   position: absolute;
   right: 210px;
   top: 140px;
 }
-.main .contacts__content .social .TikTok-img {
+.main .contacts__content .social .socials-icons .TikTok-img {
   position: absolute;
   right: 0px;
   top: 140px;
 }
 .main .contacts__content .logos {
-  height: 60px;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 32px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .main .contacts__content .logos .logo1,
 .main .contacts__content .logos .logo2,
@@ -1068,9 +1071,4 @@ body {
 .main .contacts__content .logos .logo5 {
   height: 46px;
   width: 184px;
-}
-@media (max-width: 1366px) {
-  .main .contacts {
-    margin-top: 60px;
-  }
 }/*# sourceMappingURL=styles.css.map */

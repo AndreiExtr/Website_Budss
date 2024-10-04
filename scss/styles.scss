@@ -595,8 +595,8 @@ body {
       }
     }
 
-    @media (max-width: 1366px) {
-      margin-top: 60px;
+    @media (max-width: 1280px) {
+      margin-top: 0;
     }
 
     @media (max-width: 1024px) {
@@ -953,10 +953,6 @@ body {
         flex-direction: column;
       }
     }
-
-    @media (max-width: 1366px) {
-      margin-top: 60px;
-    }
   }
 
   .contacts{
@@ -1028,9 +1024,11 @@ body {
       }
 
       .social{
-        height: 272px;
+        height: auto;
         width: 100%;
-        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
         .title{
           display: flex;
@@ -1052,38 +1050,45 @@ body {
           }
         }
 
-        .Facebook-img{
-          position: absolute;
-          right: 320px;
-          top: 30px;
-        }
+        .socials-icons{
+          width: 410px;
+          position: relative;
 
-        .Instagram-img{
-          position: absolute;
-          right: 110px;
-          top: 30px;
-        }
-
-        .Twitter-img{
-          position: absolute;
-          right: 210px;
-          top: 140px;
-        }
-
-        .TikTok-img{
-          position: absolute;
-          right: 0px;
-          top: 140px;
+          .Facebook-img{
+            position: absolute;
+            right: 320px;
+            top: 30px;
+          }
+  
+          .Instagram-img{
+            position: absolute;
+            right: 110px;
+            top: 30px;
+          }
+  
+          .Twitter-img{
+            position: absolute;
+            right: 210px;
+            top: 140px;
+          }
+  
+          .TikTok-img{
+            position: absolute;
+            right: 0px;
+            top: 140px;
+          }
         }
       }
 
       .logos{
-        height: 60px;
+        height: auto;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 32px;
         align-items: center;
+        flex-wrap: wrap;
 
         .logo1,
         .logo2,
@@ -1112,10 +1117,6 @@ body {
         }
 
       }
-    }
-
-    @media (max-width: 1366px) {
-      margin-top: 60px;
     }
   }
 }
