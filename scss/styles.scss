@@ -52,6 +52,10 @@ body {
         background-color: $main-background-color;
         scale: 107%;
       }
+
+      &:active {
+        transform: scale(0.95); // уменьшение при нажатии
+      }
     }
 
     .burger {
@@ -260,6 +264,10 @@ body {
             border: 2px solid $accent-color;
             background-color: $main-background-color;
             scale: 107%;
+          }
+
+          &:active {
+            transform: scale(0.95); // уменьшение при нажатии
           }
 
           @media (max-width: 768px) {
@@ -1119,6 +1127,10 @@ body {
             background-color: $main-background-color;
             scale: 107%;
           }
+
+          &:active {
+            transform: scale(0.95); // уменьшение при нажатии
+          }
         }
       }
 
@@ -1334,6 +1346,10 @@ body {
           background-color: $main-background-color;
           scale: 107%;
         }
+
+        &:active {
+          transform: scale(0.95); // уменьшение при нажатии
+        }
       }
 
       .btn-decline{
@@ -1357,6 +1373,10 @@ body {
           background-color: $main-background-color;
           color: $text-color;
           scale: 107%;
+        }
+
+        &:active {
+          transform: scale(0.95); // уменьшение при нажатии
         }
       }
     }
@@ -1449,6 +1469,10 @@ body {
             border: 2px solid $accent-color;
             background-color: $main-background-color;
             scale: 107%;
+          }
+
+          &:active {
+            transform: scale(0.95); // уменьшение при нажатии
           }
         }
       }

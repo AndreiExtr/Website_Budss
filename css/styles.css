@@ -45,6 +45,9 @@ body {
   background-color: #181818;
   scale: 107%;
 }
+.header__content .btn:active {
+  transform: scale(0.95);
+}
 .header__content .burger {
   display: none;
 }
@@ -241,6 +244,9 @@ body {
   border: 2px solid #954CED;
   background-color: #181818;
   scale: 107%;
+}
+.main .hero__content .title-block .btn:active {
+  transform: scale(0.95);
 }
 @media (max-width: 768px) {
   .main .hero__content .title-block .btn {
@@ -1084,6 +1090,9 @@ body {
   background-color: #181818;
   scale: 107%;
 }
+.main .contacts__content .block .btn:active {
+  transform: scale(0.95);
+}
 .main .contacts__content .social {
   height: auto;
   width: 100%;
@@ -1292,6 +1301,9 @@ body {
   background-color: #181818;
   scale: 107%;
 }
+.main .cookies .buttons .btn-accept:active {
+  transform: scale(0.95);
+}
 .main .cookies .buttons .btn-decline {
   width: auto;
   height: 60px;
@@ -1314,6 +1326,9 @@ body {
   background-color: #181818;
   color: #ffffff;
   scale: 107%;
+}
+.main .cookies .buttons .btn-decline:active {
+  transform: scale(0.95);
 }
 .main .cookies p {
   font-size: 20px;
@@ -1404,6 +1419,9 @@ body {
   border: 2px solid #954CED;
   background-color: #181818;
   scale: 107%;
+}
+.footer__content .logo-btn .apps .btn:active {
+  transform: scale(0.95);
 }
 .footer__content hr {
   width: 100%;
