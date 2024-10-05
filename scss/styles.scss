@@ -268,6 +268,10 @@ body {
             border: 2px solid $accent-color;
             background-color: $main-background-color;
             scale: 107%;
+
+            @media (max-width: 768px) {
+              scale: 100%;
+            }
           }
 
           &:active {
@@ -275,7 +279,6 @@ body {
           }
 
           @media (max-width: 768px) {
-            scale: 100%;
             width: 100%;
           }
         }
