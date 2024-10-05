@@ -1153,6 +1153,10 @@ body {
           &:hover{
             background-color: $main-background-color;
             scale: 107%;
+
+            @media (max-width: 768px) {
+              scale: none;
+            }
           }
 
           &:active {
@@ -1507,25 +1511,15 @@ body {
           border-radius: 16px;
           border: 2px solid transparent;
           box-sizing: border-box;
-
-          @media (max-width: 768px) {
-            width: 184px;
-  
-            &:hover{
-              border: 2px solid $accent-color;
-              background-color: $main-background-color;
-              scale: none;
-            }
-  
-            &:active {
-              transform: scale(0.95); // уменьшение при нажатии
-            }
-          }
     
           &:hover{
             border: 2px solid $accent-color;
             background-color: $main-background-color;
             scale: 107%;
+
+            @media (max-width: 768px) {
+              scale: none;
+            }
           }
 
           &:active {

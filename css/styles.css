@@ -1113,6 +1113,11 @@ body {
   background-color: #181818;
   scale: 107%;
 }
+@media (max-width: 768px) {
+  .main .contacts__content .block .btn:hover {
+    scale: none;
+  }
+}
 .main .contacts__content .block .btn:active {
   transform: scale(0.95);
 }
@@ -1449,23 +1454,15 @@ body {
   border: 2px solid transparent;
   box-sizing: border-box;
 }
-@media (max-width: 768px) {
-  .footer__content .logo-btn .apps .btn {
-    width: 184px;
-  }
-  .footer__content .logo-btn .apps .btn:hover {
-    border: 2px solid #954CED;
-    background-color: #181818;
-    scale: none;
-  }
-  .footer__content .logo-btn .apps .btn:active {
-    transform: scale(0.95);
-  }
-}
 .footer__content .logo-btn .apps .btn:hover {
   border: 2px solid #954CED;
   background-color: #181818;
   scale: 107%;
+}
+@media (max-width: 768px) {
+  .footer__content .logo-btn .apps .btn:hover {
+    scale: none;
+  }
 }
 .footer__content .logo-btn .apps .btn:active {
   transform: scale(0.95);
