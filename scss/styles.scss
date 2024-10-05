@@ -167,6 +167,9 @@ body {
 .main {
   // height: 100vh;
   // margin-bottom: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .hero{
     height: 700px;
@@ -1260,6 +1263,105 @@ body {
         }
 
       }
+    }
+  }
+
+  .cookies{
+    position: fixed;
+    bottom: 0;
+    width: 1260px;
+    background-color: $text-color;
+    border-radius: 16px;
+    z-index: 3;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+    margin-bottom: 30px;
+
+    @media (max-width: 1270px) {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      width: 1000px;
+    }
+
+    @media (max-width: 1000px) {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      width: 700px;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      width: 335px;
+      padding: 16px;
+    }
+
+    .buttons{
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .btn-accept{
+        width: auto;
+        height: 60px;
+        padding: 16px 30px;
+        color: $text-color;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: $accent-color;
+        border-radius: 16px;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+  
+        &:hover{
+          background-color: $main-background-color;
+        }
+      }
+
+      .btn-decline{
+        width: auto;
+        height: 60px;
+        padding: 16px 30px;
+        color: $main-background-color;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: $text-color;
+        border-radius: 16px;
+        border: 2px solid $accent-color;
+        box-sizing: border-box;
+
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+  
+        &:hover{
+          border: 2px solid $accent-color;
+          background-color: $main-background-color;
+          color: $text-color;
+        }
+      }
+    }
+
+    p{
+      font-size: 20px;
+      font-weight: 200;
+      color: $main-background-color;
     }
   }
 }

@@ -142,6 +142,11 @@ body {
   fill: #ffffff;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .main .hero {
   height: 700px;
   width: 100%;
@@ -1211,6 +1216,104 @@ body {
 .main .contacts__content .logos .logo5 {
   height: 46px;
   width: 184px;
+}
+.main .cookies {
+  position: fixed;
+  bottom: 0;
+  width: 1260px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  z-index: 3;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 150px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1270px) {
+  .main .cookies {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: 1000px;
+  }
+}
+@media (max-width: 1000px) {
+  .main .cookies {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .main .cookies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 335px;
+    padding: 16px;
+  }
+}
+.main .cookies .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+@media (max-width: 768px) {
+  .main .cookies .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.main .cookies .buttons .btn-accept {
+  width: auto;
+  height: 60px;
+  padding: 16px 30px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #954CED;
+  border-radius: 16px;
+}
+@media (max-width: 768px) {
+  .main .cookies .buttons .btn-accept {
+    width: 100%;
+  }
+}
+.main .cookies .buttons .btn-accept:hover {
+  background-color: #181818;
+}
+.main .cookies .buttons .btn-decline {
+  width: auto;
+  height: 60px;
+  padding: 16px 30px;
+  color: #181818;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 2px solid #954CED;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .main .cookies .buttons .btn-decline {
+    width: 100%;
+  }
+}
+.main .cookies .buttons .btn-decline:hover {
+  border: 2px solid #954CED;
+  background-color: #181818;
+  color: #ffffff;
+}
+.main .cookies p {
+  font-size: 20px;
+  font-weight: 200;
+  color: #181818;
 }
 
 .footer {
