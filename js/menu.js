@@ -6,6 +6,13 @@ const closeMenu = document.getElementById('closeMenu');
 burger.addEventListener('click', () => {
     burger.classList.toggle('active');
     menu.classList.toggle('active');
+
+    // Убираем или добавляем прокрутку
+    if (menu.classList.contains('active')) {
+      document.body.style.overflow = 'hidden'; // Отключаем прокрутку
+    } else {
+        document.body.style.overflow = 'auto'; // Включаем прокрутку
+    }
 });
 
 // Закрытие меню при клике на крестик
