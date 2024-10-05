@@ -1104,6 +1104,18 @@ body {
 .main .contacts__content .block .btn:active {
   transform: scale(0.95);
 }
+@media (max-width: 768px) {
+  .main .contacts__content .block .btn {
+    width: 100%;
+  }
+  .main .contacts__content .block .btn:hover {
+    background-color: #181818;
+    scale: none;
+  }
+  .main .contacts__content .block .btn:active {
+    transform: scale(0.95);
+  }
+}
 .main .contacts__content .social {
   height: auto;
   width: 100%;
@@ -1305,8 +1317,14 @@ body {
 }
 @media (max-width: 768px) {
   .main .cookies .buttons .btn-accept {
-    scale: 100%;
     width: 100%;
+  }
+  .main .cookies .buttons .btn-accept:hover {
+    background-color: #181818;
+    scale: none;
+  }
+  .main .cookies .buttons .btn-accept:active {
+    transform: scale(0.95);
   }
 }
 .main .cookies .buttons .btn-accept:hover {
@@ -1330,8 +1348,16 @@ body {
 }
 @media (max-width: 768px) {
   .main .cookies .buttons .btn-decline {
-    scale: 100%;
     width: 100%;
+  }
+  .main .cookies .buttons .btn-decline:hover {
+    border: 2px solid #954CED;
+    background-color: #181818;
+    color: #ffffff;
+    scale: none;
+  }
+  .main .cookies .buttons .btn-decline:active {
+    transform: scale(0.95);
   }
 }
 .main .cookies .buttons .btn-decline:hover {
@@ -1426,6 +1452,14 @@ body {
 @media (max-width: 768px) {
   .footer__content .logo-btn .apps .btn {
     width: 184px;
+  }
+  .footer__content .logo-btn .apps .btn:hover {
+    border: 2px solid #954CED;
+    background-color: #181818;
+    scale: none;
+  }
+  .footer__content .logo-btn .apps .btn:active {
+    transform: scale(0.95);
   }
 }
 .footer__content .logo-btn .apps .btn:hover {
