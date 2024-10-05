@@ -16,10 +16,10 @@ closeMenu.addEventListener('click', () => {
   burger.classList.remove('active');
   menu.classList.remove('active');
 
-  // Используем setTimeout, чтобы избежать конфликтов
+  // setTimeout, чтобы избежать конфликтов
   setTimeout(() => {
       document.body.style.overflow = 'auto'; // Включаем прокрутку
-  }, 300); // Задержка в 300 миллисекунд, вы можете настроить по своему усмотрению
+  }, 300);
 });
 
 

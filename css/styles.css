@@ -43,6 +43,7 @@ body {
 .header__content .btn:hover {
   border: 2px solid #954CED;
   background-color: #181818;
+  scale: 107%;
 }
 .header__content .burger {
   display: none;
@@ -239,6 +240,7 @@ body {
 .main .hero__content .title-block .btn:hover {
   border: 2px solid #954CED;
   background-color: #181818;
+  scale: 107%;
 }
 @media (max-width: 768px) {
   .main .hero__content .title-block .btn {
@@ -1080,6 +1082,7 @@ body {
 }
 .main .contacts__content .block .btn:hover {
   background-color: #181818;
+  scale: 107%;
 }
 .main .contacts__content .social {
   height: auto;
@@ -1287,6 +1290,7 @@ body {
 }
 .main .cookies .buttons .btn-accept:hover {
   background-color: #181818;
+  scale: 107%;
 }
 .main .cookies .buttons .btn-decline {
   width: auto;
@@ -1309,6 +1313,7 @@ body {
   border: 2px solid #954CED;
   background-color: #181818;
   color: #ffffff;
+  scale: 107%;
 }
 .main .cookies p {
   font-size: 20px;
@@ -1398,6 +1403,7 @@ body {
 .footer__content .logo-btn .apps .btn:hover {
   border: 2px solid #954CED;
   background-color: #181818;
+  scale: 107%;
 }
 .footer__content hr {
   width: 100%;
