@@ -1136,15 +1136,6 @@ body {
           font-weight: 500;
           background-color: $accent-color;
           border-radius: 16px;
-    
-          &:hover{
-            background-color: $main-background-color;
-            scale: 107%;
-          }
-
-          &:active {
-            transform: scale(0.95);
-          }
 
           @media (max-width: 768px) {
             width: 100%;
@@ -1157,6 +1148,15 @@ body {
             &:active {
               transform: scale(0.95);
             }
+          }
+    
+          &:hover{
+            background-color: $main-background-color;
+            scale: 107%;
+          }
+
+          &:active {
+            transform: scale(0.95);
           }
         }
       }

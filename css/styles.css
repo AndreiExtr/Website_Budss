@@ -1097,13 +1097,6 @@ body {
   background-color: #954CED;
   border-radius: 16px;
 }
-.main .contacts__content .block .btn:hover {
-  background-color: #181818;
-  scale: 107%;
-}
-.main .contacts__content .block .btn:active {
-  transform: scale(0.95);
-}
 @media (max-width: 768px) {
   .main .contacts__content .block .btn {
     width: 100%;
@@ -1115,6 +1108,13 @@ body {
   .main .contacts__content .block .btn:active {
     transform: scale(0.95);
   }
+}
+.main .contacts__content .block .btn:hover {
+  background-color: #181818;
+  scale: 107%;
+}
+.main .contacts__content .block .btn:active {
+  transform: scale(0.95);
 }
 .main .contacts__content .social {
   height: auto;
