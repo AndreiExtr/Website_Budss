@@ -13,3 +13,12 @@ closeMenu.addEventListener('click', () => {
     burger.classList.remove('active');
     menu.classList.remove('active');
 });
+
+
+// Закрытие меню при изменении размера окна
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+      burger.classList.remove('active');
+      menu.classList.remove('active');
+  }
+});
