@@ -101,6 +101,7 @@ body {
   border-radius: 16px;
   border: 2px solid transparent;
   box-sizing: border-box;
+  scale: 107%;
 }
 @media (max-width: 768px) {
   .header .menu .btn {
@@ -110,6 +111,9 @@ body {
 .header .menu .btn:hover {
   border: 2px solid #954CED;
   background-color: #181818;
+}
+.header .menu .btn:active {
+  transform: scale(0.95);
 }
 .header .menu ul {
   list-style: none;
