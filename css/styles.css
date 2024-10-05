@@ -258,6 +258,7 @@ body {
   .main .hero__content .title-block .btn:hover {
     border: 2px solid #954CED;
     background-color: #181818;
+    scale: none;
   }
   .main .hero__content .title-block .btn:active {
     transform: scale(0.95);

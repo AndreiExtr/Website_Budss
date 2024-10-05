@@ -280,6 +280,7 @@ body {
             &:hover{
               border: 2px solid $accent-color;
               background-color: $main-background-color;
+              scale: none;
             }
   
             &:active {
