@@ -4,20 +4,24 @@ const closeMenu = document.getElementById('closeMenu');
 
 // Открытие меню при клике на бургер
 burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    menu.classList.toggle('active');
+  burger.classList.toggle('active');
+  menu.classList.toggle('active');
 
-      document.body.style.overflow = 'hidden'; // Отключаем прокрутку
-
+  // Отключаем прокрутку
+  document.body.style.overflow = 'hidden'; 
 });
 
 // Закрытие меню при клике на крестик
 closeMenu.addEventListener('click', () => {
-    burger.classList.remove('active');
-    menu.classList.remove('active');
+  burger.classList.remove('active');
+  menu.classList.remove('active');
 
+  // Используем setTimeout, чтобы избежать конфликтов
+  setTimeout(() => {
       document.body.style.overflow = 'auto'; // Включаем прокрутку
+  }, 300); // Задержка в 300 миллисекунд, вы можете настроить по своему усмотрению
 });
+
 
 // Закрытие меню при изменении размера окна
 window.addEventListener('resize', () => {
