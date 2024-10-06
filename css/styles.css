@@ -1395,13 +1395,57 @@ body {
 }
 .main .popup-sales__shape {
   width: 420px;
-  height: 590px;
+  height: auto;
   border-radius: 20px;
   background-color: #ffffff;
-  padding: 40px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.main .popup-sales__shape p {
+  font-size: 14px;
+  font-family: 200;
+  margin-bottom: 16px;
+}
+.main .popup-sales__shape p .link {
+  color: #954CED;
+  text-decoration: underline;
+}
+.main .popup-sales__shape .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.main .popup-sales__shape .input-group .input-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.main .popup-sales__shape .input-group .input-label .required {
+  color: red;
+  font-size: 16px;
+}
+.main .popup-sales__shape .input-group .input-field {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: 1px solid #F1F1F1;
+  border-radius: 14px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.main .popup-sales__shape .input-group .input-field::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A7A7A7;
+}
+.main .popup-sales__shape .input-group .input-field::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A7A7A7;
 }
 .main .popup-sales__shape .btn-cancel {
   width: auto;
