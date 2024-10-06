@@ -1379,6 +1379,66 @@ body {
   font-weight: 200;
   color: #181818;
 }
+.main .popup-sales {
+  position: fixed;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+.main .popup-sales.active {
+  display: flex;
+}
+.main .popup-sales__shape {
+  width: 420px;
+  height: 590px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .popup-sales__shape .btn-cancel {
+  width: auto;
+  height: 60px;
+  padding: 16px 30px;
+  color: #181818;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 2px solid #954CED;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .main .popup-sales__shape .btn-cancel {
+    width: 100%;
+  }
+  .main .popup-sales__shape .btn-cancel:hover {
+    border: 2px solid #954CED;
+    background-color: #181818;
+    color: #ffffff;
+    scale: none;
+  }
+  .main .popup-sales__shape .btn-cancel:active {
+    transform: scale(0.95);
+  }
+}
+.main .popup-sales__shape .btn-cancel:hover {
+  border: 2px solid #954CED;
+  background-color: #181818;
+  color: #ffffff;
+  scale: 107%;
+}
+.main .popup-sales__shape .btn-cancel:active {
+  transform: scale(0.95);
+}
 
 .footer {
   height: 190px;

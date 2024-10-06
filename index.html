@@ -11,7 +11,7 @@
   <header class="header">
     <div class="header__content">
       <img src="./img/logo.png" alt="" class="logo__img">
-      <button class="btn">Contact sales</button>
+      <button class="btn" id="openPopup">Contact sales</button>
       <div class="burger" id="burger">
         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="30" height="3" rx="2" />
@@ -183,6 +183,11 @@
         <button class="btn-decline">Decline</button>
       </div>
     </section>
+    <section class="popup-sales" id="popupSales" style="display: none;">
+      <div class="popup-sales__shape">
+        <button class="btn-cancel" id="closePopup">Cancel</button>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__content">
@@ -207,5 +212,6 @@
   </footer>
   <script src="./js/menu.js"></script>
   <script src="./js/cookies.js"></script>
+  <script src="./js/popupSales.js"></script>
 </body>
 </html>
