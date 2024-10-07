@@ -26,14 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Проверка поля "Email"
-    if (emailField.value.trim() === '') {
+    const emailValue = emailField.value.trim();
+
+    // Регулярное выражение для проверки email (как для международных, так и для российских доменов)
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(ru|com|net|org|gov|edu|info|biz)$/i;
+
+    if (!emailRegex.test(emailValue)) {
       emailError.style.display = 'block';
+      emailError.textContent = 'Please enter a valid email address';
       emailField.style.border = '1px solid #ff0000';
-      isValid = false;
     } else {
       emailError.style.display = 'none';
       emailField.style.border = '1px solid #F1F1F1';
     }
+
 
     // Проверка поля "Phone"
     const phoneValue = phoneField.value.trim();
