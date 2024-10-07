@@ -1403,6 +1403,11 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .main .popup-sales__shape {
+    width: 335px;
+  }
+}
 .main .popup-sales__shape p {
   font-size: 14px;
   font-family: 200;
@@ -1457,6 +1462,13 @@ body {
   flex-direction: row;
   gap: 24px;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .main .popup-sales__shape .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .main .popup-sales__shape .buttons .btn-done {
   width: 100%;
@@ -1537,6 +1549,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
+}
+@media (max-width: 500px) {
+  .main .popup-application__shape {
+    width: 335px;
+  }
+}
+.main .popup-application__shape h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #954CED;
+}
+.main .popup-application__shape p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #181818;
+  text-align: center;
 }
 .main .popup-application__shape .btn-super {
   width: 100%;
