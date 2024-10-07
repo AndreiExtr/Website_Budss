@@ -189,37 +189,43 @@
           <label class="input-label">
             Name <span class="required">*</span>
           </label>
-          <input type="name" id="email" class="input-field" placeholder="Enter name">
+          <input type="name" class="input-field" placeholder="Enter name" id="name">
+          <span class="error" style="display: none;">This field is required.</span>
         </div>
         <div class="input-group">
           <label class="input-label">
             Email <span class="required">*</span>
           </label>
-          <input type="email" id="email" class="input-field" placeholder="Enter email">
+          <input type="email" class="input-field" placeholder="Enter email" id="email">
+          <span class="error" style="display: none;">This field is required.</span>
         </div>
         <div class="input-group">
           <label class="input-label">
             Phone number <span class="required">*</span>
           </label>
-          <input type="phone" id="email" class="input-field" placeholder=" + 1 900 000 00 00">
+          <input type="phone" class="input-field" placeholder=" + 1 900 000 00 00" id="phone">
+          <span class="error" style="display: none;">This field is required.</span>
         </div>
         <div class="input-group">
           <label class="input-label">
             Company
           </label>
-          <input type="company" id="email" class="input-field" placeholder="Enter company">
+          <input type="company" class="input-field" placeholder="Enter company">
         </div>
         <div class="input-group">
           <label class="input-label">
             Website/Store URL
           </label>
-          <input type="url" id="email" class="input-field" placeholder="Enter Website/Store URL">
+          <input type="url" class="input-field" placeholder="Enter Website/Store URL">
         </div>
         <p>By submitting this form you are agreeing to Budss’s 
           <a href="#" class="link">Privacy Policy</a> and 
           <a href="#" class="link">Terms of Use</a>.
-        </p>      
-        <button class="btn-cancel" id="closePopup">Cancel</button>
+        </p> 
+          <div class="buttons">
+            <button class="btn-done" id="done">Contact sales</button>
+            <button class="btn-cancel" id="closePopup">Cancel</button>
+          </div>     
       </div>
     </section>
   </main>
@@ -247,5 +253,6 @@
   <script src="./js/menu.js"></script>
   <script src="./js/cookies.js"></script>
   <script src="./js/popupSales.js"></script>
+  <script src="./js/error.js"></script>
 </body>
 </html>

@@ -1423,11 +1423,16 @@ body {
 .main .popup-sales__shape .input-group .input-label {
   font-size: 14px;
   font-weight: 500;
-  color: #333;
+  color: #181818;
 }
 .main .popup-sales__shape .input-group .input-label .required {
   color: red;
   font-size: 16px;
+  font-weight: 400;
+}
+.main .popup-sales__shape .input-group .error {
+  color: red;
+  font-size: 12px;
 }
 .main .popup-sales__shape .input-group .input-field {
   padding: 10px 16px;
@@ -1447,10 +1452,36 @@ body {
   font-weight: 400;
   color: #A7A7A7;
 }
-.main .popup-sales__shape .btn-cancel {
-  width: auto;
+.main .popup-sales__shape .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+.main .popup-sales__shape .buttons .btn-done {
+  width: 100%;
   height: 60px;
-  padding: 16px 30px;
+  padding: 16px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #954CED;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+.main .popup-sales__shape .buttons .btn-done:hover {
+  border: 2px solid #954CED;
+  background-color: #181818;
+  scale: 107%;
+}
+.main .popup-sales__shape .buttons .btn-done:active {
+  transform: scale(0.95);
+}
+.main .popup-sales__shape .buttons .btn-cancel {
+  width: 100%;
+  height: 60px;
+  padding: 16px;
   color: #181818;
   font-size: 20px;
   font-weight: 500;
@@ -1461,26 +1492,26 @@ body {
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  .main .popup-sales__shape .btn-cancel {
+  .main .popup-sales__shape .buttons .btn-cancel {
     width: 100%;
   }
-  .main .popup-sales__shape .btn-cancel:hover {
+  .main .popup-sales__shape .buttons .btn-cancel:hover {
     border: 2px solid #954CED;
     background-color: #181818;
     color: #ffffff;
     scale: none;
   }
-  .main .popup-sales__shape .btn-cancel:active {
+  .main .popup-sales__shape .buttons .btn-cancel:active {
     transform: scale(0.95);
   }
 }
-.main .popup-sales__shape .btn-cancel:hover {
+.main .popup-sales__shape .buttons .btn-cancel:hover {
   border: 2px solid #954CED;
   background-color: #181818;
   color: #ffffff;
   scale: 107%;
 }
-.main .popup-sales__shape .btn-cancel:active {
+.main .popup-sales__shape .buttons .btn-cancel:active {
   transform: scale(0.95);
 }
 

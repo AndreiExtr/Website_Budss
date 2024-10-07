@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
   setTimeout(() => {
       const cookiesSection = document.getElementById('cookies');
       cookiesSection.style.display = 'flex';
-  }, 2000); // 3000 миллисекунд = 3 секунды
+  }, 1500);
 });
 
 // Обработка кнопок
