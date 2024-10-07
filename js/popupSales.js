@@ -13,23 +13,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Закрытие попапа
-closePopupButton.addEventListener('click', () => {
-    popup.style.display = 'none';
+    closePopupButton.addEventListener('click', () => {
+        popup.style.display = 'none';
 
-    // метод forEach удобен, когда нужно применить одну и ту же операцию 
-    // к каждому элементу массива или коллекции, не создавая при этом дополнительных циклов for или while.
-  
-    // Скрываем все ошибки
-    const errors = document.querySelectorAll('.error');
-    errors.forEach(error => {
-      error.style.display = 'none'; // Скрываем ошибку
-    });
-  
-    // Очищаем поля ввода
-    const fields = document.querySelectorAll('.input-field');
-    fields.forEach(field => {
-      field.value = ''; // Очищаем значение
-      field.style.border = '1px solid #F1F1F1';
-    });
-  });  
+        // метод forEach удобен, когда нужно применить одну и ту же операцию 
+        // к каждому элементу массива или коллекции, не создавая при этом дополнительных циклов for или while.
+    
+        // Скрываем все ошибки
+        const errors = document.querySelectorAll('.error');
+        errors.forEach(error => {
+        error.style.display = 'none'; // Скрываем ошибку
+        });
+    
+        // Очищаем поля ввода
+        const fields = document.querySelectorAll('.input-field');
+        fields.forEach(field => {
+        field.value = ''; // Очищаем значение
+        field.style.border = '1px solid #F1F1F1';
+        });
+    }); 
 });
