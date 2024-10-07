@@ -1431,7 +1431,7 @@ body {
   font-weight: 400;
 }
 .main .popup-sales__shape .input-group .error {
-  color: red;
+  color: #ff0000;
   font-size: 12px;
 }
 .main .popup-sales__shape .input-group .input-field {

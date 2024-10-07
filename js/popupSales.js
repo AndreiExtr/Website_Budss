@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Закрытие попапа
 closePopupButton.addEventListener('click', () => {
     popup.style.display = 'none';
+
+    // метод forEach удобен, когда нужно применить одну и ту же операцию 
+    // к каждому элементу массива или коллекции, не создавая при этом дополнительных циклов for или while.
   
     // Скрываем все ошибки
     const errors = document.querySelectorAll('.error');
@@ -22,7 +25,7 @@ closePopupButton.addEventListener('click', () => {
       error.style.display = 'none'; // Скрываем ошибку
     });
   
-    // Если нужно, очистим поля ввода
+    // Очищаем поля ввода
     const fields = document.querySelectorAll('.input-field');
     fields.forEach(field => {
       field.value = ''; // Очищаем значение
