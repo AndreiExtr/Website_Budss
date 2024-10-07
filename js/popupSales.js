@@ -29,6 +29,7 @@ closePopupButton.addEventListener('click', () => {
     const fields = document.querySelectorAll('.input-field');
     fields.forEach(field => {
       field.value = ''; // Очищаем значение
+      field.style.border = '1px solid #F1F1F1';
     });
   });  
 });

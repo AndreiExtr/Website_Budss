@@ -32,12 +32,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Проверка поля "Phone"
-    if (phoneField.value.trim() === '') {
+    const phoneValue = phoneField.value.trim();
+
+    if (phoneValue === '') {
       phoneError.style.display = 'block';
+      phoneError.textContent = 'Phone number is required';
+      phoneField.style.border = '1px solid #ff0000';
+    } else if (!phoneValue.startsWith('+1')) {
+      phoneError.style.display = 'block';
+      phoneError.textContent = 'Phone number must start with +1';
+      phoneField.style.border = '1px solid #ff0000';
+    } else if (!/^\+1\d+$/.test(phoneValue)) {  // Проверяем, что после +1 только цифры
+      phoneError.style.display = 'block';
+      phoneError.textContent = 'Phone number must contain only digits after +1';
+      phoneField.style.border = '1px solid #ff0000';
+    } else if (phoneValue.length !== 14) {  // Проверяем длину номера телефона (макс. 14 символов)
+      phoneError.style.display = 'block';
+      phoneError.textContent = 'Phone number must not exceed 14 characters';
       phoneField.style.border = '1px solid #ff0000';
     } else {
-      phoneError.style.display = 'none';
-      phoneField.style.border = '1px solid #F1F1F1';
+      phoneError.style.display = 'none';  // Скрываем ошибку, если номер корректен
+      phoneField.style.border = '1px solid #F1F1F1';  // Возвращаем стандартную рамку
     }
+
   });
 });
